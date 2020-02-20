@@ -45,6 +45,8 @@ class MeteorMapViewController: UIViewController, CLLocationManagerDelegate {
         meteorMapView.showAnnotations(meteorMapView.annotations, animated: true)
         meteorMapView.addAnnotation(annotation)
         
+        let region = MKCoordinateRegion(center: annotation.coordinate, span: MKCoordinateSpan(latitudeDelta: 180, longitudeDelta: 180))
+        
+        meteorMapView.setRegion(region, animated: true)
     }
-    
 }
