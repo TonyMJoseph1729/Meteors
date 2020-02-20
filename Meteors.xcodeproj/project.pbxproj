@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DBBD76B23FD541900968AB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD76A23FD541900968AB7 /* AppDelegate.swift */; };
+		6DBBD76D23FD541900968AB7 /* MeteorsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD76C23FD541900968AB7 /* MeteorsListViewController.swift */; };
+		6DBBD77023FD541900968AB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBBD76E23FD541900968AB7 /* Main.storyboard */; };
+		6DBBD77223FD541A00968AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBBD77123FD541A00968AB7 /* Assets.xcassets */; };
+		6DBBD77523FD541A00968AB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBBD77323FD541A00968AB7 /* LaunchScreen.storyboard */; };
+		6DBBD77D23FD548600968AB7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD77C23FD548600968AB7 /* APIManager.swift */; };
+		6DBBD77F23FD5B8000968AB7 /* Meteor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD77E23FD5B8000968AB7 /* Meteor.swift */; };
+		6DBBD78123FD638800968AB7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD78023FD638800968AB7 /* Utilities.swift */; };
+		6DBBD78323FD63BA00968AB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD78223FD63BA00968AB7 /* Constants.swift */; };
+		6DBBD78523FD669700968AB7 /* MeteorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD78423FD669700968AB7 /* MeteorTableViewCell.swift */; };
+		6DBBD78723FD6B7C00968AB7 /* MeteorMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD78623FD6B7C00968AB7 /* MeteorMapViewController.swift */; };
+		6DBBD78F23FD86D600968AB7 /* MeteorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD78E23FD86D600968AB7 /* MeteorsTests.swift */; };
+		6DBBD79823FD87CA00968AB7 /* MeteorsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD79623FD87CA00968AB7 /* MeteorsModel.xcdatamodeld */; };
+		6DBBD7A023FD9D1600968AB7 /* MeteorEntity+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD79F23FD9D1600968AB7 /* MeteorEntity+CoreDataClass copy.swift */; };
+		6DBBD7A223FD9D1C00968AB7 /* MeteorEntity+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD7A123FD9D1C00968AB7 /* MeteorEntity+CoreDataProperties copy.swift */; };
+		6DBBD7AA23FDEF7800968AB7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD78023FD638800968AB7 /* Utilities.swift */; };
+		6DBBD7AB23FDEFD900968AB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD78223FD63BA00968AB7 /* Constants.swift */; };
+		6DBBD7AD23FDF0EC00968AB7 /* Extension+MeteorsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD7AC23FDF0EC00968AB7 /* Extension+MeteorsListViewController.swift */; };
+		6DBBD7AE23FEDF8300968AB7 /* Meteor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD77E23FD5B8000968AB7 /* Meteor.swift */; };
+		6DBBD7AF23FEE08300968AB7 /* MeteorsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD76C23FD541900968AB7 /* MeteorsListViewController.swift */; };
+		6DBBD7B023FEE2DB00968AB7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD77C23FD548600968AB7 /* APIManager.swift */; };
+		6DBBD7B123FEE2E100968AB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD76A23FD541900968AB7 /* AppDelegate.swift */; };
+		6DBBD7B523FEE70F00968AB7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD7B423FEE70F00968AB7 /* CoreDataManager.swift */; };
+		6DBBD7B723FEEBC400968AB7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD7B423FEE70F00968AB7 /* CoreDataManager.swift */; };
+		6DBBD7B823FF090D00968AB7 /* MeteorMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBD78623FD6B7C00968AB7 /* MeteorMapViewController.swift */; };
+		A90C548C2566B81AA7AFE60C /* Pods_Meteors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8451CCC31471BA45F8A9A5E9 /* Pods_Meteors.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DBBD79123FD86D600968AB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DBBD75F23FD541900968AB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DBBD76623FD541900968AB7;
+			remoteInfo = Meteors;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B0EC8FAE30743FF4887C8D3 /* Pods-Meteors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meteors.release.xcconfig"; path = "Target Support Files/Pods-Meteors/Pods-Meteors.release.xcconfig"; sourceTree = "<group>"; };
+		5306919A61EFF1DC5A136F6F /* Pods-Meteors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meteors.debug.xcconfig"; path = "Target Support Files/Pods-Meteors/Pods-Meteors.debug.xcconfig"; sourceTree = "<group>"; };
+		6DBBD76723FD541900968AB7 /* Meteors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meteors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBBD76A23FD541900968AB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DBBD76C23FD541900968AB7 /* MeteorsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorsListViewController.swift; sourceTree = "<group>"; };
+		6DBBD76F23FD541900968AB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DBBD77123FD541A00968AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DBBD77423FD541A00968AB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DBBD77623FD541A00968AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DBBD77C23FD548600968AB7 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		6DBBD77E23FD5B8000968AB7 /* Meteor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteor.swift; sourceTree = "<group>"; };
+		6DBBD78023FD638800968AB7 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		6DBBD78223FD63BA00968AB7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6DBBD78423FD669700968AB7 /* MeteorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorTableViewCell.swift; sourceTree = "<group>"; };
+		6DBBD78623FD6B7C00968AB7 /* MeteorMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorMapViewController.swift; sourceTree = "<group>"; };
+		6DBBD78C23FD86D500968AB7 /* MeteorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeteorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBBD78E23FD86D600968AB7 /* MeteorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorsTests.swift; sourceTree = "<group>"; };
+		6DBBD79023FD86D600968AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DBBD79723FD87CA00968AB7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		6DBBD79923FD9A9100968AB7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6DBBD79F23FD9D1600968AB7 /* MeteorEntity+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeteorEntity+CoreDataClass copy.swift"; sourceTree = "<group>"; };
+		6DBBD7A123FD9D1C00968AB7 /* MeteorEntity+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeteorEntity+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
+		6DBBD7AC23FDF0EC00968AB7 /* Extension+MeteorsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+MeteorsListViewController.swift"; sourceTree = "<group>"; };
+		6DBBD7B423FEE70F00968AB7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8451CCC31471BA45F8A9A5E9 /* Pods_Meteors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meteors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DBBD76423FD541900968AB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90C548C2566B81AA7AFE60C /* Pods_Meteors.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DBBD78923FD86D500968AB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DBBD75E23FD541900968AB7 = {
+			isa = PBXGroup;
+			children = (
+				6DBBD76923FD541900968AB7 /* Meteors */,
+				6DBBD78D23FD86D600968AB7 /* MeteorsTests */,
+				6DBBD76823FD541900968AB7 /* Products */,
+				B0D69ECB77A583E437B73F50 /* Pods */,
+				BBF21CA29075AC9FCC9CD7AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6DBBD76823FD541900968AB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DBBD76723FD541900968AB7 /* Meteors.app */,
+				6DBBD78C23FD86D500968AB7 /* MeteorsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DBBD76923FD541900968AB7 /* Meteors */ = {
+			isa = PBXGroup;
+			children = (
+				6DBBD7A923FDE75D00968AB7 /* CoreData */,
+				6DBBD7A823FDE74D00968AB7 /* CustomCells */,
+				6DBBD7A723FDE70700968AB7 /* Webservices */,
+				6DBBD7A623FDE6F600968AB7 /* Utilities */,
+				6DBBD7A523FDE6EA00968AB7 /* Models */,
+				6DBBD7A323FDE6C100968AB7 /* ViewControllers */,
+				6DBBD76A23FD541900968AB7 /* AppDelegate.swift */,
+				6DBBD76E23FD541900968AB7 /* Main.storyboard */,
+				6DBBD77123FD541A00968AB7 /* Assets.xcassets */,
+				6DBBD77323FD541A00968AB7 /* LaunchScreen.storyboard */,
+				6DBBD77623FD541A00968AB7 /* Info.plist */,
+			);
+			path = Meteors;
+			sourceTree = "<group>";
+		};
+		6DBBD78D23FD86D600968AB7 /* MeteorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DBBD78E23FD86D600968AB7 /* MeteorsTests.swift */,
+				6DBBD79023FD86D600968AB7 /* Info.plist */,
+			);
+			path = MeteorsTests;
+			sourceTree = "<group>";
+		};
+		6DBBD7A323FDE6C100968AB7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DBBD76C23FD541900968AB7 /* MeteorsListViewController.swift */,
+				6DBBD78623FD6B7C00968AB7 /* MeteorMapViewController.swift */,
+				6DBBD7AC23FDF0EC00968AB7 /* Extension+MeteorsListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6DBBD7A523FDE6EA00968AB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DBBD77E23FD5B8000968AB7 /* Meteor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6DBBD7A623FDE6F600968AB7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6DBBD78023FD638800968AB7 /* Utilities.swift */,
+				6DBBD78223FD63BA00968AB7 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6DBBD7A723FDE70700968AB7 /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				6DBBD77C23FD548600968AB7 /* APIManager.swift */,
+			);
+			path = Webservices;
+			sourceTree = "<group>";
+		};
+		6DBBD7A823FDE74D00968AB7 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				6DBBD78423FD669700968AB7 /* MeteorTableViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		6DBBD7A923FDE75D00968AB7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6DBBD79F23FD9D1600968AB7 /* MeteorEntity+CoreDataClass copy.swift */,
+				6DBBD7B423FEE70F00968AB7 /* CoreDataManager.swift */,
+				6DBBD7A123FD9D1C00968AB7 /* MeteorEntity+CoreDataProperties copy.swift */,
+				6DBBD79623FD87CA00968AB7 /* MeteorsModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B0D69ECB77A583E437B73F50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B0EC8FAE30743FF4887C8D3 /* Pods-Meteors.release.xcconfig */,
+				5306919A61EFF1DC5A136F6F /* Pods-Meteors.debug.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BBF21CA29075AC9FCC9CD7AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DBBD79923FD9A9100968AB7 /* CoreData.framework */,
+				8451CCC31471BA45F8A9A5E9 /* Pods_Meteors.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DBBD76623FD541900968AB7 /* Meteors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DBBD77923FD541A00968AB7 /* Build configuration list for PBXNativeTarget "Meteors" */;
+			buildPhases = (
+				91D6843BC745CAE0BC164F6E /* [CP] Check Pods Manifest.lock */,
+				6DBBD76323FD541900968AB7 /* Sources */,
+				6DBBD76423FD541900968AB7 /* Frameworks */,
+				6DBBD76523FD541900968AB7 /* Resources */,
+				A0C49CDAF298DACD2135A36C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meteors;
+			productName = Meteors;
+			productReference = 6DBBD76723FD541900968AB7 /* Meteors.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DBBD78B23FD86D500968AB7 /* MeteorsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DBBD79523FD86D600968AB7 /* Build configuration list for PBXNativeTarget "MeteorsTests" */;
+			buildPhases = (
+				6DBBD78823FD86D500968AB7 /* Sources */,
+				6DBBD78923FD86D500968AB7 /* Frameworks */,
+				6DBBD78A23FD86D500968AB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DBBD79223FD86D600968AB7 /* PBXTargetDependency */,
+			);
+			name = MeteorsTests;
+			productName = MeteorsTests;
+			productReference = 6DBBD78C23FD86D500968AB7 /* MeteorsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DBBD75F23FD541900968AB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Tony M Joseph";
+				TargetAttributes = {
+					6DBBD76623FD541900968AB7 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					6DBBD78B23FD86D500968AB7 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 6DBBD76623FD541900968AB7;
+					};
+				};
+			};
+			buildConfigurationList = 6DBBD76223FD541900968AB7 /* Build configuration list for PBXProject "Meteors" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DBBD75E23FD541900968AB7;
+			productRefGroup = 6DBBD76823FD541900968AB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DBBD76623FD541900968AB7 /* Meteors */,
+				6DBBD78B23FD86D500968AB7 /* MeteorsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DBBD76523FD541900968AB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBBD77523FD541A00968AB7 /* LaunchScreen.storyboard in Resources */,
+				6DBBD77223FD541A00968AB7 /* Assets.xcassets in Resources */,
+				6DBBD77023FD541900968AB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DBBD78A23FD86D500968AB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91D6843BC745CAE0BC164F6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meteors-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0C49CDAF298DACD2135A36C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meteors/Pods-Meteors-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meteors/Pods-Meteors-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meteors/Pods-Meteors-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DBBD76323FD541900968AB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBBD76D23FD541900968AB7 /* MeteorsListViewController.swift in Sources */,
+				6DBBD78723FD6B7C00968AB7 /* MeteorMapViewController.swift in Sources */,
+				6DBBD7AD23FDF0EC00968AB7 /* Extension+MeteorsListViewController.swift in Sources */,
+				6DBBD76B23FD541900968AB7 /* AppDelegate.swift in Sources */,
+				6DBBD77D23FD548600968AB7 /* APIManager.swift in Sources */,
+				6DBBD78123FD638800968AB7 /* Utilities.swift in Sources */,
+				6DBBD79823FD87CA00968AB7 /* MeteorsModel.xcdatamodeld in Sources */,
+				6DBBD7B523FEE70F00968AB7 /* CoreDataManager.swift in Sources */,
+				6DBBD7A023FD9D1600968AB7 /* MeteorEntity+CoreDataClass copy.swift in Sources */,
+				6DBBD77F23FD5B8000968AB7 /* Meteor.swift in Sources */,
+				6DBBD78523FD669700968AB7 /* MeteorTableViewCell.swift in Sources */,
+				6DBBD7A223FD9D1C00968AB7 /* MeteorEntity+CoreDataProperties copy.swift in Sources */,
+				6DBBD78323FD63BA00968AB7 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DBBD78823FD86D500968AB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBBD7AA23FDEF7800968AB7 /* Utilities.swift in Sources */,
+				6DBBD78F23FD86D600968AB7 /* MeteorsTests.swift in Sources */,
+				6DBBD7AB23FDEFD900968AB7 /* Constants.swift in Sources */,
+				6DBBD7AF23FEE08300968AB7 /* MeteorsListViewController.swift in Sources */,
+				6DBBD7B123FEE2E100968AB7 /* AppDelegate.swift in Sources */,
+				6DBBD7B823FF090D00968AB7 /* MeteorMapViewController.swift in Sources */,
+				6DBBD7AE23FEDF8300968AB7 /* Meteor.swift in Sources */,
+				6DBBD7B723FEEBC400968AB7 /* CoreDataManager.swift in Sources */,
+				6DBBD7B023FEE2DB00968AB7 /* APIManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DBBD79223FD86D600968AB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DBBD76623FD541900968AB7 /* Meteors */;
+			targetProxy = 6DBBD79123FD86D600968AB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DBBD76E23FD541900968AB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DBBD76F23FD541900968AB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DBBD77323FD541A00968AB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DBBD77423FD541A00968AB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DBBD77723FD541A00968AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5306919A61EFF1DC5A136F6F /* Pods-Meteors.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DBBD77823FD541A00968AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5306919A61EFF1DC5A136F6F /* Pods-Meteors.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DBBD77A23FD541A00968AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5306919A61EFF1DC5A136F6F /* Pods-Meteors.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Meteors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tony.Meteors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DBBD77B23FD541A00968AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B0EC8FAE30743FF4887C8D3 /* Pods-Meteors.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Meteors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tony.Meteors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DBBD79323FD86D600968AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeteorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tony.MeteorsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meteors.app/Meteors";
+			};
+			name = Debug;
+		};
+		6DBBD79423FD86D600968AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MeteorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tony.MeteorsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meteors.app/Meteors";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DBBD76223FD541900968AB7 /* Build configuration list for PBXProject "Meteors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DBBD77723FD541A00968AB7 /* Debug */,
+				6DBBD77823FD541A00968AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DBBD77923FD541A00968AB7 /* Build configuration list for PBXNativeTarget "Meteors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DBBD77A23FD541A00968AB7 /* Debug */,
+				6DBBD77B23FD541A00968AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DBBD79523FD86D600968AB7 /* Build configuration list for PBXNativeTarget "MeteorsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DBBD79323FD86D600968AB7 /* Debug */,
+				6DBBD79423FD86D600968AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6DBBD79623FD87CA00968AB7 /* MeteorsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6DBBD79723FD87CA00968AB7 /* Model.xcdatamodel */,
+			);
+			currentVersion = 6DBBD79723FD87CA00968AB7 /* Model.xcdatamodel */;
+			path = MeteorsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6DBBD75F23FD541900968AB7 /* Project object */;
+}
