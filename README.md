@@ -10,7 +10,7 @@ An application to save and display the list of fallen meteors since 2011 using N
 
 ## How to run
 
-Download or clone the file. Install pods and run.
+Download or clone the file and run.
 
 ## Test
 
